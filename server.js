@@ -27,6 +27,6 @@ server.register(require("inert"), function (err) {
     });
 
     server.start(function () {
-        console.log("Server running at:", server.info.uri); //eslint-disable-line no-console
+        console.log("Server running at: http://localhost:" + server.info.port); //eslint-disable-line no-console
     });
 });

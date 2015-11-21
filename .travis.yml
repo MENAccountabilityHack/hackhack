@@ -1,0 +1,15 @@
+branches:
+  only:
+  - master
+language: node_js
+node_js:
+- '4.1'
+install:
+- npm install
+script:
+- npm run lint
+deploy:
+  provider: heroku
+  app: hackhack
+  api_key:
+    secure: bhQfK7x4SjLoudP7Jqa3SoASz47+jUE9mV6b8YNQlAYDmvYvSD5LpmmZVY0pm/dWNKIeQhfrpvAFLSRUFxbGuykjZJJj/D9IBJD6pWtoLbS8vF50D8R5UEw41QT29n4+p77Wx+3NBSEnMhDVSfyVWnMxr66/dHpfMetN4DiRoJY2WPNABkC/9LVuQiYolnkavxWQy2IMyluxTn/6NYnFSsLoZwgQyNr8r6rZtyUgGcs7sWo4YDtmoqUxMZoMTp5AT1iHS6YSTvNmgnYaP2qtfojLQfMW0sdjZIFaGgWZo2y5/5ZToEZ8ZDTXwZk5X3IirZ0y+J1lCppUoQhEdQjvvterE/KrFMN98FBjp6LQgDZziXjsV2z29madlN24VyRsRtP/x++CqxevlWf89zvaKeZamg/wRXTCWDRLJf0u1uEfMABxrACVpCEwukLfYe4A796D8wSYPyWJT+PGcWeOepTRkQx5yHvxxOVR/zKTvqOWYHPvM2YnDMs+cX94kNUfxVMyQ6kEUeDJWLWVYgFNfeuCPrzxefUdAYcq0E0Wvui3Iu0BkFuceU1U7LPUmvt9h3ip/SNDKio2KUBBi1Al56QoIUPwKKtPeWFddL+ZCzVsNkRf7u5wVinlWgXOoT2DqN8wWgWiO83usQnGigeCT4Rh+AWbu4rQRkjeFLjh+2Q=

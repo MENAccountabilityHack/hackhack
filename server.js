@@ -1,10 +1,11 @@
 "use strict";
 
-var Hapi = require("hapi");
-var server = new Hapi.Server();
+var Hapi    = require("hapi");
+var server  = new Hapi.Server();
+var port    = process.env.PORT || 8000;
 
 var options = {
-	port: 8000
+	port: port
 };
 
 server.connection(options);

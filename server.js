@@ -1,4 +1,6 @@
-var Hapi = require('hapi');
+"use strict";
+
+var Hapi = require("hapi");
 var server = new Hapi.Server();
 
 var options = {
@@ -7,25 +9,24 @@ var options = {
 
 server.connection(options);
 
-server.register(require('inert'), function (err) {
+server.register(require("inert"), function (err) {
 
     if (err) {
         throw err;
     }
 
     server.route({
-        method: 'GET',
-        path: '/{param*}',
+        method: "GET",
+        path: "/{param*}",
         handler: {
             directory: {
-                path: './public',
+                path: "./public",
                 listing: true
             }
         }
     });
 
     server.start(function () {
-        console.log(server.info);
-        console.log('Server running at:', server.info.uri);
+        console.log("Server running at:", server.info.uri); //eslint-disable-line no-console
     });
 });

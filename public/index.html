@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Question</title>
-		<link rel="stylesheet" type="text/css" href="main.css"> 
+		<link rel="stylesheet" type="text/css" href="main.css">
 		<style>
 	/*			.circle { border-radius: 50%; margin: 10px; background-color: red; margin: 10px; background-color: blue; display: inline-block;}*/
 			body {
@@ -22,17 +22,27 @@
 	<body>
 		<div id="container">
 			<button onclick="callNewCircle()">Next question</button>
-		</div>
+        </div>
 
 		<script>
 
-		var w = 1000,
-			h = 800;
+		var w = 1500,
+			h = 600;
 
 
 		var svgContainer = d3.select("body").append("svg")
-		                                     .attr("width", w)
-		                                     .attr("height", h);
+                                            .attr("width", w)
+                                            .attr("height", h);
+
+		svgContainer.append("text").attr("id", "question").text("Question")
+				.attr("font-size", "20px")
+				.attr("x", w/10)
+				.attr("y", h * 0.3);
+
+		svgContainer.append("text").attr("id", "answer").text("Answer")
+				.attr("font-size", "20px")
+				.attr("x", w/10)
+				.attr("y", h * 0.5);
 
 
 		var circles = svgContainer.selectAll("circle");
@@ -57,21 +67,12 @@
 				imageW = (2*r) - 10,
 				imageH = (2*r) - 10;
 
-
-			console.log(data); 
-
 			var g = svgContainer
 				.append("g")
 				.data([data]);
 
 			var circle = g
-			   	.append("circle"); 
-
-			
-			g.append("text").text(data.answer.answerText._value)
-				.attr("x", x)
-				.attr("y", y);
-
+			   	.append("circle");
 
 			circle
 				.transition().duration(1000)
@@ -83,21 +84,30 @@
 					var hue =  Math.floor((Math.random() * 360) + 1);
 					return "hsla(" + hue + ", 50%, 50%, 0.5)";
 				});
-				
+
+			(function(data) {
+				console.log(data.answer.answerText._value);
+				d3.select("#answer").text(data.answer.answerText._value);
+				d3.select("#question").text(data.questionText);
+			})(data);
+
 
 			var circles = svgContainer.selectAll("circle");
-			
+
 			g.on("click", function(){
 				this.remove();
 
+			})
+			.on("mouseover", function(d){
+				d3.select("#answer").text(data.answer.answerText._value);
+				d3.select("#question").text(data.questionText);
+			})
+			.on("mouseout", function(){
+				d3.select("#answer").text("Answer");
+				d3.select("#question").text("Question");
 			});
+		};
 
-					     
-		 }; 
-	
-		
-
-
-		</script>
+			</script>
 	</body>
 </html>

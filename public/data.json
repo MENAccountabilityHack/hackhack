@@ -1,0 +1,1682 @@
+{
+
+    "format": "linked-data-api",
+    "DDP API Version": "0.6",
+    "result": 
+
+{
+
+    "_about": "http://lda.data.parliament.uk/answeredquestions.json?_view=AnsweredQuestions&_pageSize=10&_page=0",
+    "definition": "http://lda.data.parliament.uk/meta/answeredquestions.json?_view=AnsweredQuestions",
+    "extendedMetadataVersion": "http://lda.data.parliament.uk/answeredquestions.json?_view=AnsweredQuestions&_metadata=all&_pageSize=10&_page=0",
+    "first": "http://lda.data.parliament.uk/answeredquestions.json?_view=AnsweredQuestions&_page=0",
+    "isPartOf": 
+
+{
+
+    "_about": "http://lda.data.parliament.uk/answeredquestions.json?_view=AnsweredQuestions",
+    "definition": "http://lda.data.parliament.uk/meta/answeredquestions.json?_view=AnsweredQuestions",
+    "hasPart": "http://lda.data.parliament.uk/answeredquestions.json?_view=AnsweredQuestions&_pageSize=10&_page=0",
+    "type": "http://purl.org/linked-data/api/vocab#ListEndpoint"
+
+},
+"items": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/resources/429133",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Prime Minister"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/429133/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>I refer the hon. Member to the press release published by my Office on 16 November 2015. The press release is available on the gov.uk website.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1467",
+    "label": 
+
+    {
+        "_value": "Biography information for Mr David Cameron"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Witney"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Mr David Cameron"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T14:35:09.84Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "23"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Prime Minister"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Prime Minister"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-18",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Russia: Syria"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Prime Minister, what discussions he had with representatives of the Russian government at the recent G20 meeting on Syria.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4129",
+    "label": 
+
+    {
+        "_value": "Biography information for Ian Paisley"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "North Antrim"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Ian Paisley"
+        }
+    ],
+    "uin": "16812"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428632",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "HM Treasury"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428632/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>I refer the hon. Member to the answer that I gave on 25 June 2015 in response to PQ 3380. The answer can be accessed using the following link:</p><br /><p>www.parliament.uk/business/publications/written-questions-answers-statements/written-questions-answers/?page=1&amp;max=20&amp;questiontype=QuestionsWithAnswersOnly&amp;house=commons%2clords&amp;use-dates=True&amp;answered-from=2015-06-25&amp;answered-to=2015-06-26&amp;member=4107.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4107",
+    "label": 
+
+    {
+        "_value": "Biography information for Harriett Baldwin"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "West Worcestershire"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Harriett Baldwin"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T12:47:42.287Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "14"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Treasury"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "CaTreasury"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Banks: Closures"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask Mr Chancellor of the Exchequer, what steps he is taking to prevent local high street bank branches from closing.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4376",
+    "label": 
+
+    {
+        "_value": "Biography information for Chris Davies"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Brecon and Radnorshire"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Chris Davies"
+        }
+    ],
+    "uin": "16629"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428634",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Cabinet Office"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428634/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>The information requested falls within the responsibility of the UK Statistics Authority. I have asked the Authority to reply.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1556",
+    "label": 
+
+    {
+        "_value": "Biography information for Mr Rob Wilson"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Reading East"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Mr Rob Wilson"
+
+},
+"attachment": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428634/answer/attachment/1",
+    "fileName": 
+
+    {
+        "_value": "16628 .pdf"
+    },
+    "title": "UKSA Letter to Member - Level of Employment"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T10:46:06.823Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "53"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Cabinet Office"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Cabinet Office"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Employment"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Minister for the Cabinet Office, what progress the Government has made on increasing the level of employment in (a) North Lincolnshire, (b) East Yorkshire and (c) England since 2010.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/3939",
+    "label": 
+
+    {
+        "_value": "Biography information for Andrew Percy"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Brigg and Goole"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Andrew Percy"
+        }
+    ],
+    "uin": "16628"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428635",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Department for Work and Pensions"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428635/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>It is not possible to quantify the exact effect of benefit duration on the likelihood of re-employment as information on the destinations of people leaving benefits is not recorded for all claimants.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4066",
+    "label": 
+
+    {
+        "_value": "Biography information for Priti Patel"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Witham"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Priti Patel"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T12:52:55.5Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "29"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Work and Pensions"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Work and Pensions"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Long Term Unemployed People"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Secretary of State for Work and Pensions, what assessment the Government has made of the effect on the likelihood of people's reemployment of their prior length of absence from work; and what steps the Government is taking to address that matter.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/3939",
+    "label": 
+
+    {
+        "_value": "Biography information for Andrew Percy"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Brigg and Goole"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Andrew Percy"
+        }
+    ],
+    "uin": "16623"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428637",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "HM Treasury"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428637/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>A new exemption from tax and National Insurance Contributions for councillors’ travel expenses will take effect from 6 April 2016. This was legislated for in the Summer Finance Bill. It will apply to travel expenses paid to councillors across the UK, including those in Northern Ireland.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1529",
+    "label": 
+
+    {
+        "_value": "Biography information for Mr David Gauke"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "South West Hertfordshire"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Mr David Gauke"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T12:48:53.77Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "14"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Treasury"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "CaTreasury"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Councillors: Northern Ireland"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask Mr Chancellor of the Exchequer, what his policy is on the taxation of travel expenses for councillors in Northern Ireland.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1593",
+    "label": 
+
+    {
+        "_value": "Biography information for Sammy Wilson"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "East Antrim"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Sammy Wilson"
+        }
+    ],
+    "uin": "16597"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428639",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Department for Communities and Local Government"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428639/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>The Department for Communities and Local Government has indicated that it will not be possible to answer this question within the usual time period. An answer is being prepared and will be provided as soon as it is available.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4009",
+    "label": 
+
+    {
+        "_value": "Biography information for Brandon Lewis"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Great Yarmouth"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Brandon Lewis"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "",
+    "_datatype": "dateTime"
+
+},
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "7"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Utilities: Infrastructure"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Secretary of State for Communities and Local Government, what statutory obligations are placed on local authorities to have an accurate assessment of the (a) capacity, (b) location and (c) other aspects of local utility infrastructure.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1480",
+    "label": 
+
+    {
+        "_value": "Biography information for Mrs Maria Miller"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Basingstoke"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Mrs Maria Miller"
+        }
+    ],
+    "uin": "16611"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428643",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Department for Communities and Local Government"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428643/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>I refer the hon. Member to the answer I gave her on 6 November 2015, PQ 13946.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1578",
+    "label": 
+
+    {
+        "_value": "Biography information for Greg Clark"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Tunbridge Wells"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Greg Clark"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"groupedQuestionUIN": 
+[
+
+{
+
+    "_value": "16599"
+
+},
+{
+
+    "_value": "16601"
+
+},
+
+    {
+        "_value": "16602"
+    }
+
+],
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T11:42:12.41Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "7"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Essex County Fire and Rescue Service: Staff"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Secretary of State for Communities and Local Government, what the change in the number of firefighter posts was in Essex Fire and Rescue Service in 2013-14.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4342",
+    "label": 
+
+    {
+        "_value": "Biography information for Liz McInnes"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Heywood and Middleton"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Liz McInnes"
+        }
+    ],
+    "uin": "16600"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428644",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Department for Communities and Local Government"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428644/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>I refer the hon. Member to the answer I gave her on 6 November 2015, PQ 13946.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1578",
+    "label": 
+
+    {
+        "_value": "Biography information for Greg Clark"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Tunbridge Wells"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Greg Clark"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"groupedQuestionUIN": 
+[
+
+{
+
+    "_value": "16599"
+
+},
+{
+
+    "_value": "16600"
+
+},
+
+    {
+        "_value": "16602"
+    }
+
+],
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T11:42:12.457Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "7"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Hertfordshire Fire and Rescue Service: Staff"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Secretary of State for Communities and Local Government, what the change in the number of firefighter posts was in Hertfordshire Fire and Rescue Service in 2013-14.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4342",
+    "label": 
+
+    {
+        "_value": "Biography information for Liz McInnes"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Heywood and Middleton"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Liz McInnes"
+        }
+    ],
+    "uin": "16601"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428645",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Department for Communities and Local Government"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428645/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>I refer the hon. Member to the answer I gave her on 6 November 2015, PQ 13946.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1578",
+    "label": 
+
+    {
+        "_value": "Biography information for Greg Clark"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Tunbridge Wells"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Greg Clark"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"groupedQuestionUIN": 
+[
+
+{
+
+    "_value": "16600"
+
+},
+{
+
+    "_value": "16601"
+
+},
+
+    {
+        "_value": "16602"
+    }
+
+],
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T11:42:12.333Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "7"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Bedfordshire and Luton Fire and Rescue Service: Staff"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Secretary of State for Communities and Local Government, what the change in the number of firefighter posts was in Bedfordshire Fire and Rescue Service in 2013-14.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4342",
+    "label": 
+
+    {
+        "_value": "Biography information for Liz McInnes"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Heywood and Middleton"
+
+},
+"tablingMemberPrinted": 
+[
+
+        {
+            "_value": "Liz McInnes"
+        }
+    ],
+    "uin": "16599"
+
+},
+{
+
+    "_about": "http://data.parliament.uk/resources/428646",
+    "AnsweringBody": 
+
+[
+
+    {
+        "_value": "Department for Communities and Local Government"
+    }
+
+],
+"answer": 
+{
+
+    "_about": "http://data.parliament.uk/resources/428646/answer",
+    "answerText": 
+
+{
+
+    "_value": "<p>I refer the hon. Member to the answer I gave her on 6 November 2015, PQ 13946.</p>"
+
+},
+"answeringMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/1578",
+    "label": 
+
+    {
+        "_value": "Biography information for Greg Clark"
+    }
+
+},
+"answeringMemberConstituency": 
+{
+
+    "_value": "Tunbridge Wells"
+
+},
+"answeringMemberPrinted": 
+{
+
+    "_value": "Greg Clark"
+
+},
+"dateOfAnswer": 
+{
+
+    "_value": "2015-11-20",
+    "_datatype": "dateTime"
+
+},
+"groupedQuestionUIN": 
+[
+
+{
+
+    "_value": "16599"
+
+},
+{
+
+    "_value": "16600"
+
+},
+
+    {
+        "_value": "16601"
+    }
+
+],
+"isMinisterialCorrection": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"questionFirstAnswered": 
+[
+
+        {
+            "_value": "2015-11-20T11:42:12.537Z",
+            "_datatype": "dateTime"
+        }
+    ]
+
+},
+"answeringDeptId": 
+{
+
+    "_value": "7"
+
+},
+"answeringDeptShortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"answeringDeptSortName": 
+{
+
+    "_value": "Communities and Local Government"
+
+},
+"date": 
+{
+
+    "_value": "2015-11-17",
+    "_datatype": "dateTime"
+
+},
+"hansardHeading": 
+{
+
+    "_value": "Cambridgeshire Fire and Rescue Service: Staff"
+
+},
+"houseId": 
+{
+
+    "_value": "1"
+
+},
+"legislature": 
+[
+
+{
+
+    "_about": "http://data.parliament.uk/terms/25259",
+    "prefLabel": 
+
+        {
+            "_value": "House of Commons"
+        }
+    }
+
+],
+"questionText": "To ask the Secretary of State for Communities and Local Government, what the change in the number of firefighter posts was in Cambridgeshire Fire and Rescue Service in 2013-14.",
+"registeredInterest": 
+{
+
+    "_value": "false",
+    "_datatype": "boolean"
+
+},
+"tablingMember": 
+{
+
+    "_about": "http://data.parliament.uk/members/4342",
+    "label": 
+
+    {
+        "_value": "Biography information for Liz McInnes"
+    }
+
+},
+"tablingMemberConstituency": 
+{
+
+    "_value": "Heywood and Middleton"
+
+},
+"tablingMemberPrinted": 
+[
+
+                    {
+                        "_value": "Liz McInnes"
+                    }
+                ],
+                "uin": "16602"
+            }
+        ],
+        "itemsPerPage": ​10,
+        "next": "http://lda.data.parliament.uk/answeredquestions.json?_view=AnsweredQuestions&_page=1",
+        "page": ​0,
+        "startIndex": ​1,
+        "totalResults": ​62515,
+        "type": "http://purl.org/linked-data/api/vocab#Page"
+    }
+
+}

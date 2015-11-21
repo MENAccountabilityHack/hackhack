@@ -1,0 +1,30 @@
+{
+  "name": "hackhack",
+  "version": "1.0.0",
+  "description": "Accountability Hack Day 2015",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon --ignore node_modules/ -e js,html,css server.js",
+    "lint": "eslint **/*.js *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MENAccountabilityHack/hackhack.git"
+  },
+  "author": "tsop14, minaorangina, NataliaLKB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MENAccountabilityHack/hackhack/issues"
+  },
+  "homepage": "https://github.com/MENAccountabilityHack/hackhack#readme",
+  "dependencies": {
+    "hapi": "^11.1.1",
+    "inert": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.1",
+    "nodemon": "^1.8.1"
+  }
+}

@@ -31,8 +31,8 @@ server.register(require("inert"), function (err) {
             method: "GET",
             path: "/data",
             handler: function(req, rep){
-                        var Wreck = require('wreck');
-                        var uri = 'http://lda.data.parliament.uk/answeredquestions.json?AnsweringBody=Prime%20Minister';
+                        var Wreck = require("wreck");
+                        var uri = "http://lda.data.parliament.uk/answeredquestions.json?AnsweringBody=Prime%20Minister";
 
                         Wreck.get(uri, function (err, res, payload) {
                             rep(payload);

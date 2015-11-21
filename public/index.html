@@ -4,12 +4,100 @@
 		<meta charset="utf-8">
 		<title>Question</title>
 		<link rel="stylesheet" type="text/css" href="main.css"> 
+		<style>
+	/*			.circle { border-radius: 50%; margin: 10px; background-color: red; margin: 10px; background-color: blue; display: inline-block;}*/
+			body {
+			  height: 100%;
+			  margin: 0;
+			  overflow: hidden;
+			}
+
+			svg {
+			  position: absolute;
+			}
+
+		</style>
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	</head>
 	<body>
-		<div id="container"></div>
+		<div id="container">
+			<button onclick="callNewCircle()">Next question</button>
+		</div>
 
 		<script>
+
+		var w = 1000,
+			h = 800;
+
+
+		var svgContainer = d3.select("body").append("svg")
+		                                     .attr("width", w)
+		                                     .attr("height", h);
+
+
+		var circles = svgContainer.selectAll("circle");
+
+
+
+		 var callNewCircle = function() {
+		 	d3.json("data.json", function(error, json){
+		 		if (error) throw error;
+		 		var l = json.items.length;
+		 		var randomItem = Math.floor((Math.random() * l) + 0);
+
+		 		newCircle(json.items[randomItem]);
+		 	});
+		 };
+
+		 var newCircle = function(data){
+
+			var x = Math.floor((Math.random() * w) + 1),
+				y = Math.floor((Math.random() * h) + 1),
+				r = 50,
+				imageW = (2*r) - 10,
+				imageH = (2*r) - 10;
+
+
+			console.log(data); 
+
+			var g = svgContainer
+				.append("g")
+				.data([data]);
+
+			var circle = g
+			   	.append("circle"); 
+
+			
+			g.append("text").text(data.answer.answerText._value)
+				.attr("x", x)
+				.attr("y", y);
+
+
+			circle
+				.transition().duration(1000)
+				.attr("cx", x)
+				.attr("cy", y)
+				.attr("r", r)
+
+				.attr("fill", function (d){
+					var hue =  Math.floor((Math.random() * 360) + 1);
+					return "hsla(" + hue + ", 50%, 50%, 0.5)";
+				});
+				
+
+			var circles = svgContainer.selectAll("circle");
+			
+			g.on("click", function(){
+				this.remove();
+
+			});
+
+					     
+		 }; 
+	
+		
+
+
 		</script>
 	</body>
 </html>

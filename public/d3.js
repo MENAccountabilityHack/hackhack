@@ -30,8 +30,6 @@ var circles = svgContainer.selectAll("circle");
 		imageH = (2*r) - 10;
 
 
-	console.log(data);
-
 	var g = svgContainer
 		.append("g")
 		.data([data]);
@@ -59,8 +57,13 @@ var circles = svgContainer.selectAll("circle");
 
 	var circles = svgContainer.selectAll("circle");
 
-	g.on("click", function(){
-		this.remove();
+	g.on("click", function(name){
+
+        var name = "Diane Abbott";
+
+        getMPData(name, function(response) {
+            console.log(response);
+        });
 
 	});
 

@@ -81,69 +81,64 @@
 
 
 
-		 var callNewCircle = function() {
-                var data = JSON.parse(PMQsData).result.items;
+        var callNewCircle = function() {
+            var data = JSON.parse(PMQsData).result.items;
 
-                var l = data.length;
-		 		var randomItem = Math.floor((Math.random() * l) + 0);
+            var l = data.length;
+        		var randomItem = Math.floor((Math.random() * l) + 0);
 
-		 		newCircle(data[randomItem]);
+        		newCircle(data[randomItem]);
 
-		 };
+        };
 
-		 var newCircle = function(data){
+        var newCircle = function(data){
 
-			var x = Math.floor((Math.random() * w) + 1),
-				y = Math.floor((Math.random() * h) + 1),
-				r = 50,
-				imageW = (2*r) - 10,
-				imageH = (2*r) - 10;
+            var x = Math.floor((Math.random() * w) + 1),
+            	y = Math.floor((Math.random() * h) + 1),
+            	r = 50,
+            	imageW = (2*r) - 10,
+            	imageH = (2*r) - 10;
 
-			var g = svgContainer
-				.append("g")
-				.data([data]);
+            var g = svgContainer
+            	.append("g")
+            	.data([data]);
 
-			var circle = g
-			   	.append("circle");
+            var circle = g
+               	.append("circle");
 
+            circle
+            	.transition().duration(1000)
+            	.attr("cx", x)
+            	.attr("cy", y)
+            	.attr("r", r)
 
-			circle
-				.transition().duration(1000)
-				.attr("cx", x)
-				.attr("cy", y)
-				.attr("r", r)
+            	.attr("fill", function (d){
+            		var hue =  Math.floor((Math.random() * 360) + 1);
+            		return "hsla(" + hue + ", 50%, 50%, 0.5)";
+            	});
 
-				.attr("fill", function (d){
-					var hue =  Math.floor((Math.random() * 360) + 1);
-					return "hsla(" + hue + ", 50%, 50%, 0.5)";
-				});
-
-			(function(data) {
-				console.log(data.answer.answerText._value);
-				d3.select("#answer").text(data.answer.answerText._value);
-				d3.select("#question").text(data.questionText);
-			})(data);
-
+            (function(data) {
+            	console.log(data.answer.answerText._value);
+            	d3.select("#answer").text(data.answer.answerText._value);
+            	d3.select("#question").text(data.questionText);
+            })(data);
 
 
-			var circles = svgContainer.selectAll("circle");
+            var circles = svgContainer.selectAll("circle");
 
-			g.on("click", function(){
-				this.remove();
+            g.on("click", function(){
+            	this.remove();
 
-			})
-			.on("mouseover", function(d){
-				d3.select("#answer").text(data.answer.answerText._value);
-				d3.select("#question").text(data.questionText);
-			})
-			.on("mouseout", function(){
-				d3.select("#answer").text("Answer");
-				d3.select("#question").text("Question");
-			});
-
-		 };
-
-
+            })
+            .on("mouseover", function(d){
+            	d3.select("#answer").text(data.answer.answerText._value);
+            	d3.select("#question").text(data.questionText);
+            })
+            .on("mouseout", function(){
+            	d3.select("#answer").text("Answer");
+            	d3.select("#question").text("Question");
+            });
+        };
 
 		</script>
 	</body>

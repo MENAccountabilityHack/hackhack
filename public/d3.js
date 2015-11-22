@@ -18,7 +18,7 @@ var callNewCircle = function() {
 	});
 };
 
-var newCircle = function(data){
+function newCircle (data){
 
 	var x = Math.floor((Math.random() * w) + 1),
 		y = Math.floor((Math.random() * h) + 1),
@@ -63,4 +63,4 @@ var newCircle = function(data){
 	    });
 
 	});
-};
+}

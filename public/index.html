@@ -4,142 +4,16 @@
 		<meta charset="utf-8">
 		<title>Question</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
-		<style>
-	/*			.circle { border-radius: 50%; margin: 10px; background-color: red; margin: 10px; background-color: blue; display: inline-block;}*/
-			body {
-			  height: 100%;
-			  margin: 0;
-			  overflow: hidden;
-			}
-
-			svg {
-			  position: absolute;
-			}
-
-		</style>
-        <script>
-            var PMQsData;
-
-            function getData (callback) {
-
-                var req = new XMLHttpRequest();
-                var url = "/data";
-
-                req.onload = function(event) {
-                    callback(event.target.response);
-                };
-
-                req.open("GET", url, true);
-
-                req.onreadystatechange = function() {
-                    if (req.readyState === 4 && req.status !== 200) {
-                        console.log("error");
-                        return;
-                    }
-                };
-
-                req.send(null);
-            }
-
-            getData(function(response){
-                PMQsData = response;
-            });
-
-
-        </script>
-		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
-
 	</head>
 	<body>
 		<div id="container">
 			<button onclick="callNewCircle()">Next question</button>
         </div>
 
-		<script>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="data.js" charset="utf-8"></script>
+		<script src="./script.js" charset="utf-8"></script>
+		<script src="./d3.js" charset="utf-8"></script>
 
-		var w = 1500,
-			h = 600;
-
-
-		var svgContainer = d3.select("body").append("svg")
-                                            .attr("width", w)
-                                            .attr("height", h);
-
-		svgContainer.append("text").attr("id", "question").text("Question")
-				.attr("font-size", "20px")
-				.attr("x", w/10)
-				.attr("y", h * 0.3);
-
-		svgContainer.append("text").attr("id", "answer").text("Answer")
-				.attr("font-size", "20px")
-				.attr("x", w/10)
-				.attr("y", h * 0.5);
-
-
-		var circles = svgContainer.selectAll("circle");
-
-
-
-        var callNewCircle = function() {
-            var data = JSON.parse(PMQsData).result.items;
-
-            var l = data.length;
-        		var randomItem = Math.floor((Math.random() * l) + 0);
-
-        		newCircle(data[randomItem]);
-
-        };
-
-        var newCircle = function(data){
-
-            var x = Math.floor((Math.random() * w) + 1),
-            	y = Math.floor((Math.random() * h) + 1),
-            	r = 50,
-            	imageW = (2*r) - 10,
-            	imageH = (2*r) - 10;
-
-            var g = svgContainer
-            	.append("g")
-            	.data([data]);
-
-            var circle = g
-               	.append("circle");
-
-            circle
-            	.transition().duration(1000)
-            	.attr("cx", x)
-            	.attr("cy", y)
-            	.attr("r", r)
-
-            	.attr("fill", function (d){
-            		var hue =  Math.floor((Math.random() * 360) + 1);
-            		return "hsla(" + hue + ", 50%, 50%, 0.5)";
-            	});
-
-            (function(data) {
-            	console.log(data.answer.answerText._value);
-            	d3.select("#answer").text(data.answer.answerText._value);
-            	d3.select("#question").text(data.questionText);
-            })(data);
-
-
-            var circles = svgContainer.selectAll("circle");
-
-            g.on("click", function(){
-            	this.remove();
-
-            })
-            .on("mouseover", function(d){
-            	d3.select("#answer").text(data.answer.answerText._value);
-            	d3.select("#question").text(data.questionText);
-            })
-            .on("mouseout", function(){
-            	d3.select("#answer").text("Answer");
-            	d3.select("#question").text("Question");
-            });
-        };
-
-		</script>
 	</body>
 </html>

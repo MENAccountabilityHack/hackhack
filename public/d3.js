@@ -6,22 +6,19 @@ var svgContainer = d3.select("body").append("svg")
                                      .attr("width", w)
                                      .attr("height", h);
 
-
 var circles = svgContainer.selectAll("circle");
 
+var callNewCircle = function() {
+	d3.json("data.json", function(error, json){
+		if (error) throw error;
+		var l = json.items.length;
+		var randomItem = Math.floor((Math.random() * l) + 0);
 
+		newCircle(json.items[randomItem]);
+	});
+};
 
- var callNewCircle = function() {
- 	d3.json("data.json", function(error, json){
- 		if (error) throw error;
- 		var l = json.items.length;
- 		var randomItem = Math.floor((Math.random() * l) + 0);
-
- 		newCircle(json.items[randomItem]);
- 	});
- };
-
- var newCircle = function(data){
+var newCircle = function(data){
 
 	var x = Math.floor((Math.random() * w) + 1),
 		y = Math.floor((Math.random() * h) + 1),
@@ -59,11 +56,11 @@ var circles = svgContainer.selectAll("circle");
 
 	g.on("click", function(name){
 
-        var name = "Diane Abbott";
+	    var name = "Diane Abbott";
 
-        getMPData(name, function(response) {
-            console.log(response);
-        });
+	    getMPData(name, function(response) {
+	        console.log(response);
+	    });
 
 	});
- };
+};

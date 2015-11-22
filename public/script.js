@@ -11,7 +11,7 @@ function getMPData (mpName, callback) {
     req.onload = function(event) {
 
         callback(event.target.response);
-    }
+    };
 
     req.open("GET", url, true);
 
@@ -22,7 +22,7 @@ function getMPData (mpName, callback) {
             console.log("Error");
             return;
         }
-    }
+    };
 
     req.send(null);
 }

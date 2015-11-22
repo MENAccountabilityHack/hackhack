@@ -66,6 +66,4 @@ var circles = svgContainer.selectAll("circle");
         });
 
 	});
-
-
  };
